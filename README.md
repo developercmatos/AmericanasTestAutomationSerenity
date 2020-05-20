@@ -1,1 +1,1 @@
-# AmericanasTestAutomationSerenity
+# Americanas Test Automation Serenity
