@@ -29,5 +29,8 @@ public class HomePage extends PageObject {
     public String getGreetingMessage() {
 
         return waitFor(GREETING_MSG).$(GREETING_MSG).getText();
+
     }
+
+
 }

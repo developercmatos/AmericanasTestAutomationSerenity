@@ -18,24 +18,26 @@ public class RegisterStepDef {
 
         homePage.navigateToHomePage();
     }
+    @When("^I add all information \"([^\"]*)\",\"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\",\"([^\"]*)\" ,\"([^\"]*)\"$")
+    public void i_add_all_information(String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7) {
+        registerPage.addRegisterInformation(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
 
-    @When("^I add all information , , , , , , $")
-    public void i_add_all_information(String email, String password, String cpf, String full_name,String birth_date, boolean gender, String phone) {
-        registerPage.addRegisterInformation(email,password,cpf,full_name,birth_date,true,phone);
     }
 
     @When("^save my information$")
+
     public void save_my_information() {
 
         registerPage.clickSaveRegisterInformation();
     }
 
-    @Then("^I must be able to view the Home Page again$")
-    public void i_must_be_able_to_view_the_Home_Page_again(String message) {
-        String greetingMessage = homePage.getGreetingMessage();
-        assertEquals(message, greetingMessage);
+    @Then("^I must be able to view the Home Page again \"([^\"]*)\"$")
+    public void i_must_be_able_to_view_the_Home_Page_again(String arg1) {
+        String msg = homePage.getGreetingMessage();
+        assertEquals(arg1,msg);
+    }
 
 
     }
 
-}
+

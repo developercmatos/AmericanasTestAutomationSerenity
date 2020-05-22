@@ -101,7 +101,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-05-2020 23:18</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-05-2020 21:49</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -164,7 +164,7 @@
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">Given I navigate to the register page<br>When I add all information "&lt;email&gt;","&lt;password&gt;", "&lt;cpf&gt;", "&lt;full_name&gt;", "&lt;birth_date&gt;", "&lt;gender&gt;", "&lt;phone&gt;"<br>And save my information<br>Then I must be able to view the Home Page again</div>
+            <div class="scenario">Given I navigate to the register page<br>When I add all information "&lt;email&gt;","&lt;password&gt;", "&lt;cpf&gt;", "&lt;full_name&gt;", "&lt;birth_date&gt;","&lt;gender&gt;" ,"&lt;phone&gt;"<br>And save my information<br>Then I must be able to view the Home Page again "&lt;welcome&gt;"</div>
 
         </div>
 
@@ -189,6 +189,7 @@
                             <th>Birth Date</th>
                             <th>Gender</th>
                             <th>Phone</th>
+                            <th>Welcome</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -204,7 +205,7 @@
                                             href="#0">00130940097</a>
                                 </td>
                                 <td class="test-PENDING"><a
-                                            href="#0">Client Number1</a>
+                                            href="#0">Jo&atilde;o Silva</a>
                                 </td>
                                 <td class="test-PENDING"><a
                                             href="#0">17/09/1978</a>
@@ -214,6 +215,36 @@
                                 </td>
                                 <td class="test-PENDING"><a
                                             href="#0">81941363712</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#0">ol&aacute; Jo&atilde;o</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-PENDING"><a href="#1">2</a></td>
+                                <td class="test-PENDING"><a
+                                            href="#1">chomicha4822@inserver.tk</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">95743212</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">66770228033</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">Maria Clara</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">30/11/1976</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">Female</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">66995025548</a>
+                                </td>
+                                <td class="test-PENDING"><a
+                                            href="#1">ol&aacute; Maria</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -251,7 +282,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                Example: {email=voluntaries@gmail.com, password=12345678, cpf=00130940097, full_name=Client Number1, birth_date=17/09/1978, gender=Male, phone=81941363712}
+                                Example: {email=voluntaries@gmail.com, password=12345678, cpf=00130940097, full_name=João Silva, birth_date=17/09/1978, gender=Male, phone=81941363712, welcome=olá João}
                             </span>
                             </a>
                             <span class="evidence">
@@ -259,16 +290,23 @@
                         </div>
                     </td>
                         <td width="160" class="PENDING-text">
-
-                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=3">
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=0">
                                     <img src="e6a551da20bd8ae86da03f99a49eca7e89a1b9e63a8a502b3ddb74dbb1091b7c.png"
                                          href="e6a551da20bd8ae86da03f99a49eca7e89a1b9e63a8a502b3ddb74dbb1091b7c.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=14">
+                                    <img src="09d0d7a9c0dbbaca8bc05af8b3c385a30afb5dbac9bef0755a804018a98d3df6.png"
+                                         href="09d0d7a9c0dbbaca8bc05af8b3c385a30afb5dbac9bef0755a804018a98d3df6.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
                     <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">20s</span></td>
+                    <td width="100"><span class="top-level-step">27.28s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
@@ -299,40 +337,47 @@
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">19.99s</span></td>
+                    <td width="100"><span class="nested-group-step">20.71s</span></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-3"/>
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                When I add all information "voluntaries@gmail.com","12345678", "00130940097", "Client Number1", "17/09/1978", "Male", "81941363712"
+                                When I add all information "voluntaries@gmail.com","12345678", "00130940097", "João Silva", "17/09/1978","Male" ,"81941363712"
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="PENDING-text">
-
+                        <td width="160" class="SUCCESS-text">
                                 <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=3">
                                     <img src="e6a551da20bd8ae86da03f99a49eca7e89a1b9e63a8a502b3ddb74dbb1091b7c.png"
                                          href="e6a551da20bd8ae86da03f99a49eca7e89a1b9e63a8a502b3ddb74dbb1091b7c.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=10">
+                                    <img src="bef72ed8ba5c257976738f74f358c95471ea643137695a72881700a66c7dfda3.png"
+                                         href="bef72ed8ba5c257976738f74f358c95471ea643137695a72881700a66c7dfda3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">5.7s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0-4"/>
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -343,31 +388,220 @@
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="IGNORED-text">
+                        <td width="160" class="SUCCESS-text">
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=11">
+                                    <img src="bef72ed8ba5c257976738f74f358c95471ea643137695a72881700a66c7dfda3.png"
+                                         href="bef72ed8ba5c257976738f74f358c95471ea643137695a72881700a66c7dfda3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
 
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=13">
+                                    <img src="09d0d7a9c0dbbaca8bc05af8b3c385a30afb5dbac9bef0755a804018a98d3df6.png"
+                                         href="09d0d7a9c0dbbaca8bc05af8b3c385a30afb5dbac9bef0755a804018a98d3df6.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.85s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                <tr class="test-PENDING">
                     <td width="50" class="step-icon">
                         <a name="0-5"/>
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
+                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                Then I must be able to view the Home Page again
+                                Then I must be able to view the Home Page again "olá João"
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="IGNORED-text">
+                        <td width="160" class="PENDING-text">
 
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=14">
+                                    <img src="09d0d7a9c0dbbaca8bc05af8b3c385a30afb5dbac9bef0755a804018a98d3df6.png"
+                                         href="09d0d7a9c0dbbaca8bc05af8b3c385a30afb5dbac9bef0755a804018a98d3df6.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
+                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-PENDING">
+                    <td width="50" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 pending-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Example: {email=chomicha4822@inserver.tk, password=95743212, cpf=66770228033, full_name=Maria Clara, birth_date=30/11/1976, gender=Female, phone=66995025548, welcome=olá Maria}
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="PENDING-text">
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=15">
+                                    <img src="68f02b9a277d2aa6961847e5707f31d6a180c92de02d7da2102c05bc331ab162.png"
+                                         href="68f02b9a277d2aa6961847e5707f31d6a180c92de02d7da2102c05bc331ab162.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=29">
+                                    <img src="d6846efdaca114cc934305242dc8d0fb1d8f0707d4e98757db2025af10a8a1a2.png"
+                                         href="d6846efdaca114cc934305242dc8d0fb1d8f0707d4e98757db2025af10a8a1a2.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
+                    <td width="100"><span class="top-level-step">24.33s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1-2"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Given I navigate to the register page
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=17">
+                                    <img src="68f02b9a277d2aa6961847e5707f31d6a180c92de02d7da2102c05bc331ab162.png"
+                                         href="68f02b9a277d2aa6961847e5707f31d6a180c92de02d7da2102c05bc331ab162.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">16.72s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1-3"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                When I add all information "chomicha4822@inserver.tk","95743212", "66770228033", "Maria Clara", "30/11/1976","Female" ,"66995025548"
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=18">
+                                    <img src="68f02b9a277d2aa6961847e5707f31d6a180c92de02d7da2102c05bc331ab162.png"
+                                         href="68f02b9a277d2aa6961847e5707f31d6a180c92de02d7da2102c05bc331ab162.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=25">
+                                    <img src="232c8d003381ed0c8258209863dfee9becc130ba8f9b74b3d7ab99320e825267.png"
+                                         href="232c8d003381ed0c8258209863dfee9becc130ba8f9b74b3d7ab99320e825267.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.91s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1-4"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                And save my information
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=26">
+                                    <img src="232c8d003381ed0c8258209863dfee9becc130ba8f9b74b3d7ab99320e825267.png"
+                                         href="232c8d003381ed0c8258209863dfee9becc130ba8f9b74b3d7ab99320e825267.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=28">
+                                    <img src="d6846efdaca114cc934305242dc8d0fb1d8f0707d4e98757db2025af10a8a1a2.png"
+                                         href="d6846efdaca114cc934305242dc8d0fb1d8f0707d4e98757db2025af10a8a1a2.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.7s</span></td>
+                </tr>
+                <tr class="test-PENDING">
+                    <td width="50" class="step-icon">
+                        <a name="1-5"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                Then I must be able to view the Home Page again "olá Maria"
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="PENDING-text">
+
+                                <a href="e8772d703482f1c8b07d7734ef3ac8fd13b6d2e198281806f6c60a2c4e591c0f_screenshots.html#screenshots?screenshot=29">
+                                    <img src="d6846efdaca114cc934305242dc8d0fb1d8f0707d4e98757db2025af10a8a1a2.png"
+                                         href="d6846efdaca114cc934305242dc8d0fb1d8f0707d4e98757db2025af10a8a1a2.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">PENDING</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
@@ -377,7 +611,7 @@
                 <tr class="test-PENDING">
                         <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>20.12s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>52.06s</em></span></td>
                 </tr>
 
             </table>

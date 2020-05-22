@@ -1,5 +1,5 @@
 com/americanas/steps/RegisterStepDef.class
+com/americanas/utils/GenderCategories.class
 com/americanas/runner/Runner.class
 com/americanas/pages/RegisterPage.class
-com/americanas/utils/Gender.class
 com/americanas/pages/HomePage.class

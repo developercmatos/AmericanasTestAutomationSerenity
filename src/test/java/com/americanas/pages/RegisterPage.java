@@ -1,11 +1,11 @@
 package com.americanas.pages;
 
+
 import net.serenitybdd.core.pages.PageObject;
-import net.thucydides.core.webelements.Checkbox;
 
 public class RegisterPage  extends PageObject {
 
-    private static final String REGISTER_TITLE = "//*[@id=\"root\"]//span[contains(text(), 'Cadastre-se')]";
+    private static final String REGISTER_TITLE = "//*[@id=\"root\"]//span[contains(text(),'Cadastre-se')]";
 
     //FORM
     private static final String EMAIL = "//*[@id=\"email-input\"]";
@@ -13,29 +13,37 @@ public class RegisterPage  extends PageObject {
     private static final String CPF = "//*[@id=\"cpf-input\"]";
     private static final String FULL_NAME= "//*[@id=\"name-input\"]";
     private static final String BIRTH_DATE= "//*[@id=\"birthday-input\"]";
-    private static final String GENDER = "//*[@id=\"gender\"]";
+    private static final String GENDER_M ="//*[@id=\"gender\"]/div[1]/label";
+    private static final String GENDER_F ="//*[@id=\"gender\"]/div[2]/label";
     private static final String PHONE = "//*[@id=\"phone-input\"]";
     private static final String CREATE_REGISTER_BUTTON= "//*[@id=\"root\"]/div/div[2]/form/button";
 
+
     public RegisterPage addRegisterInformation(String email, String password, String cpf, String full_name,
-                                               String birth_date, boolean gender,String phone) {
+                                               String birth_date,String gender,String phone) {
 
-        waitForTextToAppear(REGISTER_TITLE);
-        $(EMAIL).type(email);
-        $(PASSWORD).type(password);
-        $(CPF).type(cpf);
-        $(FULL_NAME).type(full_name);
-        $(BIRTH_DATE).type(birth_date);
+        waitFor(REGISTER_TITLE);
+        waitFor(EMAIL).$(EMAIL).type(email);
+        waitFor(PASSWORD).$(PASSWORD).type(password);
+        waitFor(CPF).$(CPF).type(cpf);
+        waitFor(FULL_NAME).$(FULL_NAME).type(full_name);
+        waitFor(BIRTH_DATE).$(BIRTH_DATE).type(birth_date);
 
-        Checkbox myListCheckBox = new Checkbox( $(GENDER ) );
+        switch (gender){
+            case "Male":
+                $(GENDER_M).click();
+                return this.switchToPage(RegisterPage.class);
+            case "Female":
+                $(GENDER_F).click();
+                return this.switchToPage(RegisterPage.class);
 
-        myListCheckBox.setChecked(gender);
-
-        $(PHONE).type(phone);
-
-        return this;
-
+            default:
+                break;
+        }
+        waitFor(PHONE).$(PHONE).type(phone);
+        return null;
     }
+
     /**
      * Saving register information
      *
@@ -46,7 +54,5 @@ public class RegisterPage  extends PageObject {
 
         return this.switchToPage(HomePage.class);
     }
-
-
 
 }
